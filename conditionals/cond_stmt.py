@@ -1,38 +1,49 @@
-# a == b 
-# a != b #not equal
-# a > b #greater than
-# a < b #less than
-# a >= b #greater than or equal to
-# a <= b #less than or equal to
+# a == b #equality operator
+# a != b #not equal operator
+# a > b #greater than operator
+# a < b #less than operator
+# a >= b #greater than or equal to operator
+# a <= b #less than or equal to operator
 
-# a = 30
-# b = 30
+# if condition is true: 
+#     execute this block of code
 
-# if a < b:
-#     print("a is less than b")
-# elif a == b:
-#     print("a is equal to b")    
+# a = 10
+# b = 10
+
+# if a > b : 
+#     print("a is greater than b")
+# elif a < b : 
+#     print("a is less than b")  
+
 # else: 
-#     print("a is greater than b")    
+#     print("a is equal to b")      
 
-#Nested if statements
-# x = 41 
 
-# if x >10: 
+# x = 9 
+# if x > 10 : 
 #     print("x is greater than 10")
-#     if x > 20:
-#         print("x is greater than 20")
+#     if x > 20 :
+#         print("and is also greater than 20")
 #     else: 
-#         print("x is less than or equal to 20")    
+#         print("but is not greater than 20")
+# else : 
+#     print("x is not greater than 10")        
+
 
 age = 17
 has_license = True
 
-if age >= 18:
+if age >= 18: 
     if has_license: 
-        print("You are eligible to drive.")
+        print("You can drive")
     else: 
-        print("You need a driver's license to drive.")    
+        print("You need a license to drive")
 
 else: 
-    print("You are not eligible to drive.")        
+    print("You are too young to drive")        
+
+
+
+if age >=18 and has_license: 
+    print("You can drive")
